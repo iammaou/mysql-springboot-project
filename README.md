@@ -41,3 +41,7 @@ This is where we have the defenition of everything required for the server so th
 
 
 **I HAVE NO IDEA WHAT I'M DOING**
+
+got the error 
+
+Error resolving template [error], template might not exist or might not be accessible by any of the configured Template Resolvers

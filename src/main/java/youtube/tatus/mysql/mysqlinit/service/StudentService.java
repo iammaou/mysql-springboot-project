@@ -13,19 +13,19 @@ public class StudentService {
     @Autowired
     private StudentRepository repo;
 
-    public List<Student> listAll(){
+    public List<Student> listAll() {
         return repo.findAll();
     }
 
-    public void save(Student std){
+    public void save(Student std) {
         repo.save(std);
     }
 
-    public Student get(long id){
+    public Student get(long id) {
         return repo.findById(id).get();
     }
 
-    public void delete(long id){
+    public void delete(long id) {
         repo.deleteById(id);
     }
 }

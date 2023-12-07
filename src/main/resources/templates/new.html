@@ -13,14 +13,14 @@
     <h1>Create New Student</h1>
     <br />
     <div class="col-sm-4">
-        <form action="#" th:action="@{/save}" th:object="${student}" method="post">
+        <form action="@{/save}" object="${student}" method="post">
 
             <div alight="left">
                 <tr>
                     <label class="form-label" >Student Name</label>
                     <td>
-                        <input type="hidden" th:field="*{id}" />
-                        <input type="text" th:field="*{studentname}" class="form-control" placeholder="Student Name" />
+                        <input type="hidden" field="*{id}" />
+                        <input type="text" field="*{studentname}" class="form-control" placeholder="Student Name" />
                     </td>
                 </tr>
             </div>
@@ -29,13 +29,13 @@
 
                 <tr>
                     <label class="form-label" >Course</label>
-                    <td><input type="text" th:field="*{course}" class="form-control" placeholder="Course" /></td>
+                    <td><input type="text" field="*{course}" class="form-control" placeholder="Course" /></td>
                 </tr>
             </div>
             <div alight="left">
                 <tr>
                     <label class="form-label" >Fee</label>
-                    <td><input type="text" th:field="*{fee}" class="form-control" placeholder="Fee" /></td>
+                    <td><input type="text" field="*{fee}" class="form-control" placeholder="Fee" /></td>
                 </tr>
             </div>
             <br>
@@ -45,5 +45,6 @@
             </table>
         </form>
     </div>
+</div>
 </body>
 </html>
